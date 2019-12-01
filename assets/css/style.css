@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+
+.err,
+.err:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25)!important;
+    border: 1px solid red!important;
+    border-color: red!important;
+}
+.suc {
+    border: 1px solid green;
+}
+
+/* LOADER */
+#preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+
+    z-index: 999999;
+}
+
+#circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#circle img {
+    width: 100px;
+}
+
+
+.alert_cookies {
+    position: fixed;
+    
+    width: 100%;
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background: #e2e2e2;
+    color: #000;
+    
+    padding: 20px 20px 10px 20px;
+}
+
+.alert_cookies b {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.alert_cookies_btn li {
+    display: block;
+}
+.alert_cookies_btn li a {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    padding:10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.alert_cookies_btn li .accept {
+    position: relative;
+
+    background: #2638a4;
+    color: #fff;
+
+    padding: 5px 10px;
+}
+
+
+.rightNav {
+    float: right;
+}
+.rightNav li {
+    display: inline-block;
+    padding: 0px 0px;
+}
+.rightNav li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* WIDGET */
+.widget_ {
+    margin-bottom: 30px;
+}
+.card .card-body {
+    /*margin: 0;
+    padding: 0;*/
+    text-align: justify;
+}
+
+
+/* General Info */
+
+/* - Uniform Deduction - */
+
+
+/* - Sexual Harassment - */
+#changeMyName {
+    cursor: pointer;
+    border-bottom: 2px solid #007bff;
+    padding: 1px;
+
+    color: #007bff;
+}
+#changeMyNameInput {
+    cursor: pointer;
+}
+#changeMyNameInput input {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #333;
+
+    padding: 1px 5px;
+}
+#changeMyNameInput i, #changeMyName i {
+    color: #007bff;
+
+    font-size: 20px;
+}
+
+.signature_ li {
+    display: inline-block;
+}
+.signature_ li p {
+    text-align: center;
+
+    margin-top: 0;
+}
+
+
+/* Training Page */
+.accordion .btn-link {
+    font-weight: 400;
+    color: #2638a4!important;
+    background-color: transparent;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+.accordion .card-body {
+    border-top: 2px solid #2638a4;
+}
+
+.accordion .card-header .btn.collapsed .fa.main{
+    display:none;
+}
+
+.accordion .card-header .btn .fa.main {
+    background: #2638a4;
+    padding: 13px 11px;
+    color: #ffffff;
+    width: 35px;
+    height: 41px;
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display:block;
+}
+
+.accordion .card-header {
+    padding: 5px!important;
+}
+
+.odgledao_video_btn a {
+    color: #fff!important;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+
+    padding: 6px 10px;
+}
+.odgledao_video_btn a i {
+    font-size: 20px;
+}
+
+
+/* Training page */
+.modal_body_tr {
+
+}
+.modal_body_tr p {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+.modal_body_tr a {
+    width: 100%;
+
+    color: #fff!important;
+    cursor: pointer;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+.modal_body_tr a i {
+    color: #fff!important;
+    font-size: 20px;
+}
+
+/* Training modal - popup bug fix */
+.modal-body {
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+
+
+/* FOOTER */
+footer {
+    margin-top: 100px;
+}
