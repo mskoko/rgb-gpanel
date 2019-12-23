@@ -1,35 +1,10 @@
 <?php
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *   file                 :  index.php
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *   author               :  Muhamed Skoko - mskoko.me@gmail.com
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-include_once($_SERVER['DOCUMENT_ROOT'].'/includes.php');
-
-//////////////////////////
-
-if (!($User->IsLoged()) == true) {
-	header("Location: /login");
-	die();
-}
-
-if (!(isset($_GET['home_page']))) {
-	header("Location: /home?home_page");
-}
-
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title><?php echo $Config['Site']['Name']; ?></title>
-
-	<?php include_once($_SERVER['DOCUMENT_ROOT'].'/assets/php/head.php'); ?>
-
-	<!-- ld -->
-	<script type="application/ld+json" src="/assets/json/ld.json"></script>
-</head>
 <body>
 	<div id="organization"></div><div id="webpage"></div>
 
@@ -113,17 +88,3 @@ if (!(isset($_GET['home_page']))) {
     		</div>
 		</div>
     </div>
-
-
-    <footer>
-    	<div class="container">
-    		<div class="row justify-content-center">
-    			<p>&copy; <?php echo date('Y'); ?> <?php echo $Config['Site']['Name']; ?></p>
-    		</div>
-    	</div>
-    </footer>
-
-	<!-- Footer -->
-	<?php include_once($_SERVER['DOCUMENT_ROOT'].'/assets/php/footer.php'); ?>
-</body>
-</html>
