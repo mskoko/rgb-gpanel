@@ -19,24 +19,22 @@
 	ini_set(max_input_time, 6000000);
 	ini_set(memory_limit, '100M');*/
 
-	// URL
-	$url = $_SERVER['DOCUMENT_ROOT'];
+	// SERVER HOME
+	$path = $_SERVER['DOCUMENT_ROOT'];
 
 	// Configuration Files
-	include_once($url.'/core/inc/config.php');         			// MySQL Config File
+	include_once($path.'/core/inc/config.php');         			// MySQL Config File
 
 	// Classes
-	include_once($url.'/core/class/db.class.php'); 				// MySQL Managment Class
-	include_once($url.'/core/class/lang.class.php'); 			// Lang Managment Class
-	include_once($url.'/core/class/user.class.php'); 			// User Managment Class
-	include_once($url.'/core/class/secure.class.php');    		// Secure Managment Class
-	include_once($url.'/core/class/news.class.php');    		// News Managment Class
-	include_once($url.'/core/class/upload.class.php');    		// Upload Managment Class
-	include_once($url.'/core/class/alert.class.php');    		// Alert Managment Class
-	include_once($url.'/core/class/log.class.php');    			// Logs Managment Class
-	
-	// Lang Class
-	include_once($url.'/core/class/lang.class.php'); 			// Lang Managment Class
+	include_once($path.'/core/class/db.class.php'); 				// MySQL Managment Class
+	include_once($path.'/core/class/lang.class.php'); 			// Lang Managment Class
+	include_once($path.'/core/class/user.class.php'); 			// User Managment Class
+	include_once($path.'/core/class/secure.class.php');    		// Secure Managment Class
+	include_once($path.'/core/class/news.class.php');    		// News Managment Class
+	include_once($path.'/core/class/upload.class.php');    		// Upload Managment Class
+	include_once($path.'/core/class/alert.class.php');    		// Alert Managment Class
+	include_once($path.'/core/class/log.class.php');    			// Logs Managment Class
+	include_once($path.'/core/class/lang.class.php'); 			// Lang Managment Class
 
 	// Initializing Classes
 	$DataBase 	= new Database();
