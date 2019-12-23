@@ -2,13 +2,20 @@
 header_remove("X-Powered-By");
 $img_src = '/assets/img/header/4.jpg';
 ?>
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><?php echo $title; ?></title>
+
+	<!-- ld -->
+	<script type="application/ld+json" src="/assets/json/ld.json"></script>
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta name="revisit-after" content="1 days">
 	
-	<meta name="author" content="Muhamed Skoko | mskoko.me@gmail.com">
+	<meta name="author" content="Muhamed Skoko | mskoko.me@gmail.com | Nikita Šibul (RootSec) cik3r@pm.me">
 
 	<!-- Icon -->
 	<link rel="icon" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/favicon.ico" type="image/x-icon">
@@ -21,9 +28,8 @@ $img_src = '/assets/img/header/4.jpg';
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css?<?php echo time(); ?>">
-    <link rel="stylesheet" type="text/css" href="/assets/css/header.css?<?php echo time(); ?>">
-
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/header.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
 
 	<!--[if IE]>
@@ -33,3 +39,4 @@ $img_src = '/assets/img/header/4.jpg';
 	<!--[if lt IE 9]>
 		<script src="/assets/theme/js/respond.min.js"></script>
 	<![endif]-->
+</head>
