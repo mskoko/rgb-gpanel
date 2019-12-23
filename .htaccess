@@ -1,0 +1,9 @@
+AddDefaultCharset UTF-8 
+
+RewriteEngine On
+Options All -Indexes
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php?action=$1 [L,QSA]
