@@ -5,6 +5,43 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *   author               :  Muhamed Skoko - mskoko.me@gmail.com
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+if (!($User->IsLoged()) == false) {
+    header('Location: /');
+    die();
+}
+
+if(isset($_GET['log'])) {
+    $POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+
+    if(empty($POST['Email'])) {
+        $error[] = 'Greska!';
+        //$Note->sMSG('Morate unijeti Email.', 'error');        
+    }
+
+    if(empty($POST['Password'])) {
+        $error[] = 'Greska!';
+        //$Note->sMSG('Morate unijeti password.', 'error');        
+    }
+
+    $Email 		= $Secure->SecureTxt($POST['Email']);
+    $Pass 		= $Secure->SecureTxt($POST['Password']);
+    if (isset($POST['zapamtiME'])) {
+    	$ZapamtiME 	= $Secure->SecureTxt($POST['zapamtiME']);
+    } else {
+    	$ZapamtiME = '';
+    }
+    if (isset($ZapamtiME) && $ZapamtiME == '1') {
+    	$ZapamtiME = '1';
+    } else {
+    	$ZapamtiME = '0';
+    }
+
+    if(empty($error)) {
+        echo $User->LogIn($Email, $Pass, false, $ZapamtiME);
+    } else {
+        //$Note->sMSG('Podaci za prijavu nisu tacni!', 'error');
+    }
+}
 ?>
 <body>
 	<div id="organization"></div><div id="webpage"></div>
