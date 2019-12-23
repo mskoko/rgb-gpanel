@@ -5,9 +5,6 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *   author               :  HTML Template by Colorlib
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-include_once($_SERVER['DOCUMENT_ROOT'].'/includes.php');
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,7 +40,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/includes.php');
 				<h1>Oops!</h1>
 				<h2>404 - The Page can't be found</h2>
 			</div>
-			<a href="/home">Go TO HomePage</a>
+			<a href="/">Go TO HomePage</a>
 		</div>
 	</div>
 	
