@@ -45,8 +45,8 @@
 	$Alert 		= new Alert();
 	
 	// PHPMailer
-	include_once($url.'/core/inc/libs/PHPMailer-master/class.phpmailer.php');
-	include_once($url.'/core/inc/libs/PHPMailer-master/class.smtp.php');
+	include_once($path.'/core/inc/libs/PHPMailer-master/class.phpmailer.php');
+	include_once($path.'/core/inc/libs/PHPMailer-master/class.smtp.php');
 
 	$mail = new PHPMailer();
 
