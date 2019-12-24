@@ -1,9 +1,7 @@
-<?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   file                 :  index.php
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   author               :  Muhamed Skoko - mskoko.me@gmail.com
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+<?php 
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 ?>
 <body>
 	<div id="organization"></div><div id="webpage"></div>
