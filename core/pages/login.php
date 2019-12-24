@@ -1,9 +1,8 @@
-<?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   file                 :  login.php
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   author               :  Muhamed Skoko - mskoko.me@gmail.com
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+<?php 
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
+
 if(isset($_GET['log'])) {
     $POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
     if(empty($POST['Email'])) {
