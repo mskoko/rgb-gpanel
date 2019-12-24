@@ -19,31 +19,31 @@ switch ($url[0]) {
 		die();
 		}
     		$title = 'Home | '.$Config['Site']['Name'];
-    		require_once($_SERVER['DOCUMENT_ROOT'].'/assets/php/head.php');
-    		require_once('home.php');
-    		require_once($_SERVER['DOCUMENT_ROOT'].'/assets/php/footer.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/head.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/home.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/footer.php');
 		break;
    	}
    	case 'login': {
    		$title = 'Login | '.$Config['Site']['Name'];
-    		require_once($_SERVER['DOCUMENT_ROOT'].'/assets/php/head.php');
-		require_once('login.php');
-   		require_once($_SERVER['DOCUMENT_ROOT'].'/assets/php/footer.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/head.php');
+		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/login.php');
+   		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/footer.php');
     		break;
   	}
 	case 'register': {	   
     		$title = 'Register | '.$Config['Site']['Name'];
-    		require_once($_SERVER['DOCUMENT_ROOT'].'/assets/php/head.php');
-		require_once('register.php');
-   	        require_once($_SERVER['DOCUMENT_ROOT'].'/assets/php/footer.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/head.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/register.php');
+   	        require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/footer.php');
    		break;
   	}
 	case 'logout': {
-		require_once('logout.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/logout.php');
    	 	break;
    	}
 	default: {
        		 $title = 'Error 404';
-		 require_once('404.php');
+		 require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/404.php');
 	}
 }
