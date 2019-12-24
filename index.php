@@ -11,12 +11,12 @@ if(isset($_GET['action'])) {
 } else {
   $url[0] = "home";
 }
-  
+if (!($User->IsLoged()) == true) {
 switch ($url[0]) {
 	case 'home': {
     		$title = 'Home | '.$Config['Site']['Name'];
     		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/head.php');
-    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/home.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/index.php');
     		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/footer.php');
 		break;
    	}
@@ -34,6 +34,20 @@ switch ($url[0]) {
    	        require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/footer.php');
    		break;
   	}
+	default: {
+       		 $title = 'Error 404';
+		 require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/404.php');
+	}
+}
+} else {
+switch ($url[0]) {
+	case 'home': {
+    		$title = 'Home | '.$Config['Site']['Name'];
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/head.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/home.php');
+    		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/footer.php');
+		break;
+   	}
 	case 'logout': {
     		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/logout.php');
    	 	break;
@@ -42,4 +56,5 @@ switch ($url[0]) {
        		 $title = 'Error 404';
 		 require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/404.php');
 	}
+}
 }
