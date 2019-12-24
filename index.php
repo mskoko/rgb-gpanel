@@ -14,10 +14,6 @@ if(isset($_GET['action'])) {
   
 switch ($url[0]) {
 	case 'home': {
-		if (!($User->IsLoged()) == true) {
-		header("Location: /login");
-		die();
-		}
     		$title = 'Home | '.$Config['Site']['Name'];
     		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/head.php');
     		require_once($_SERVER['DOCUMENT_ROOT'].'/core/pages/home.php');
