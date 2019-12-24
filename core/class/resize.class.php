@@ -1,20 +1,7 @@
 <?php
-
-# ========================================================================#
-#
-#  Author:    Jarrod Oberto
-#  Version:   1.0
-#  Date:      17-Jan-10
-#  Purpose:   Resizes and saves image
-#  Requires : Requires PHP5, GD library.
-#  Usage Example:
-#                     include("classes/resize_class.php");
-#                     $resizeObj = new resize('images/cars/large/input.jpg');
-#                     $resizeObj -> resizeImage(150, 100, 0);
-#                     $resizeObj -> saveImage('images/cars/large/output.jpg', 100);
-#
-#
-# ========================================================================#
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 
 
 class resize {
