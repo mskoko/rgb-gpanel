@@ -1,9 +1,7 @@
 <?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   file                 :  lang.class.php
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   author               :  Muhamed Skoko - mskoko.me@gmail.com
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 
 if (isset($_GET['lang'])) {
 	if (isset($_GET['lang']) && $_GET['lang'] == 'en') {
