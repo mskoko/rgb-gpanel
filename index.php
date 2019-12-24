@@ -1,10 +1,8 @@
 <?php
-/*************************************************************/
-/*                       RootSec
-/*************************************************************/
+define('gp', TRUE);
 
 include_once($_SERVER['DOCUMENT_ROOT'].'/includes.php');
-  
+
 if(isset($_GET['action'])) {
   $action = stripslashes(htmlspecialchars(trim($_GET['action'])));
   $url = explode('/', $action);
