@@ -4,10 +4,6 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *   author               :  Muhamed Skoko - mskoko.me@gmail.com
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-if (!($User->IsLoged()) == false) {
-    header('Location: /');
-    die();
-}
 if(isset($_GET['log'])) {
     $POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
     if(empty($POST['Email'])) {
