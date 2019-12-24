@@ -1,10 +1,7 @@
 <?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   file                 :  news.class.php
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   author               :  Muhamed Skoko - mskoko.me@gmail.com
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 
 class News {
 
