@@ -1,4 +1,8 @@
 <?php
+	if(!defined('gp')) {
+   		die('Direct access not permitted');
+	}
+
 	if ($_SERVER['HTTP_HOST'] == 'localhost') {
 		// Database for my localhost
 		define("DB_HOST", "localhost"); 	// MySQL Database Host
@@ -18,13 +22,13 @@
 	$Config = Array(
 		'Site' => Array(
 			// Name
-			'Name' 		=> 'Game Panel | mskoko.me',
+			'Name' 		=> 'Game Panel',
 
 			// Email
 			'Email' 	=> 'mskoko.me@gmail.com',
 
 			// Author
-			'Author' 	=> 'Muhamed Skoko',
+			'Author' 	=> 'Muhamed Skoko & Nikita Sibul',
 		),
 
 		'Cron' => Array(
