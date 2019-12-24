@@ -1,9 +1,7 @@
 <?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   file                 :  upload.class.php
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   author               :  Muhamed Skoko - mskoko.me@gmail.com
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 
 class Upload {
 
