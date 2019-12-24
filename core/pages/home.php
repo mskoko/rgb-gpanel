@@ -4,6 +4,10 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *   author               :  Muhamed Skoko - mskoko.me@gmail.com
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+if (!($User->IsLoged()) == true) {
+	header("Location: /login");
+	die();
+}
 ?>
 <body>
 	<div id="organization"></div><div id="webpage"></div>
