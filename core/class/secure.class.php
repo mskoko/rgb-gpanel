@@ -1,11 +1,7 @@
 <?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   file                 :  secure.class.php
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   author               :  Muhamed Skoko - mskoko.me@gmail.com
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-//if(count(get_included_files()) == 1) exit("Direct access not permitted.");
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 
 class Secure {
 	
