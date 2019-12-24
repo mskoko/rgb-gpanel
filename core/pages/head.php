@@ -1,4 +1,7 @@
 <?php
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 header_remove("X-Powered-By");
 $img_src = '/assets/img/header/4.jpg';
 ?>
