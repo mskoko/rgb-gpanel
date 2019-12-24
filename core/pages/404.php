@@ -1,9 +1,7 @@
 <?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   file                 :  error.php
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   author               :  HTML Template by Colorlib
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 ?>
 <!DOCTYPE html>
 <html>
