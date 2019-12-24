@@ -1,4 +1,8 @@
 <?php
+	if(!defined('gp')) {
+   		die('Direct access not permitted');
+	}
+
 	ini_set('display_errors', 1); // Kad bude Live zameni sa 1 => 0;
 	ini_set('display_startup_errors', 1); // Kad bude Live zameni sa 1 => 0;
 	ini_set('error_log', 'dev/logs/errors.log'); // Logging file path
