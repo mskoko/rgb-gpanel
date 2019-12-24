@@ -1,9 +1,7 @@
 <?php
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   file                 :  log.class.php
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *   author               :  Muhamed Skoko - mskoko.me@gmail.com
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+if(!defined('gp')) {
+   die('Direct access not permitted');
+}
 
 
 class Logs {
